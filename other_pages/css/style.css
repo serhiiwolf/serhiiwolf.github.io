@@ -52,11 +52,15 @@
 	padding: 1%;
 }
 footer{
+	height: 5vh;
 	width: 100%;
 	background: black;
 	color: white;
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-footer b{
+footer h5 b{
 	color: yellow;
 }
