@@ -9,3 +9,192 @@
 	width: 100%;
 
 }
+.serhii{
+	width: 100%;
+	height: 70vh;
+display: flex;
+flex-direction: column;	
+}
+.sr-hr{
+	width: 20%;
+	height: 1px;
+	background-color: black;
+	border: none;
+
+}
+.fr-sr{
+	padding: 1vw;
+	width: 100%;
+	height: 7vh;
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.none{
+	width: 10%;
+	height: 10px;
+	background-color: white;
+	border: none;
+}
+.sc-sr{
+	width: 100%;
+	height: 50vh;
+	
+	display: flex;
+	flex-direction: row;
+	padding: 1vw;
+}
+.img-one{
+	width: 24%;
+	height: 47vh;
+    
+    padding: 1vw;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+.img-two{
+	width: 24%;
+	height: 47vh;
+
+    padding: 1vw;
+     margin-right: 2%;
+}
+.img-three{
+	width: 24%;
+	height: 47vh;
+   
+    padding: 1vw;
+     margin-right: 2%;
+}
+.img-four{
+	width: 24%;
+	height: 47vh;
+    
+    padding: 1vw;
+}
+.img-sr-one{
+	width: 100%;
+    height: 22vh;
+    
+    background-image: url(../../img/street-4942809_640.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.span-one{
+	width: 100%;
+	height: 5vh;
+	padding: 1vw;
+	
+}
+.data-one{
+	width: 100%;
+	height: 5vh;
+	padding: 1vw;
+	color: #bdbebd;
+}
+.flaticon-one{
+	width: 100%;
+	height: 15vh;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+.flat{
+	margin-right: 2%;
+}
+.img-sr-two{
+	width: 100%;
+    height: 20vh;
+    
+    background-image: url(../../img/sunset-3875817_640.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.span-two{
+	width: 100%;
+	height: 5vh;
+	padding: 1vw;
+	
+}
+.data-two{
+	width: 100%;
+	height: 5vh;
+	padding: 1vw;
+	color: #bdbebd;
+}
+.flaticon-two{
+	width: 100%;
+	height: 15vh;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+.img-sr-three{
+	width: 100%;
+    height: 20vh;
+    
+    background-image: url(../../img/double-exposure-2390185_640.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.span-three{
+	width: 100%;
+	height: 5vh;
+	padding: 1vw;
+	
+}
+.data-three{
+	width: 100%;
+	height: 5vh;
+	padding: 1vw;
+	color: #bdbebd;
+}
+.flaticon-three{
+	width: 100%;
+	height: 15vh;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+.img-sr-four{
+	width: 100%;
+    height: 20vh;
+    
+    background-image: url(../../img/cherry-plum-4915333_640.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+.span-four{
+	width: 100%;
+	height: 5vh;
+	padding: 1vw;
+	
+}
+.data-four{
+	width: 100%;
+	height: 5vh;
+	padding: 1vw;
+	color: #bdbebd;
+}
+.flaticon-four{
+	width: 100%;
+	height: 15vh;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+}
