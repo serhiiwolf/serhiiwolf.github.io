@@ -239,10 +239,13 @@ textarea.form-control {
 
 .pfblock-title{
     font-weight: 800;
+    font-family: Roboto;
+    color: #1BB6E0;
 }
 
 .pfblock-subtitle {
 	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	color: #C4C4C4;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -306,7 +309,7 @@ textarea.form-control {
 
 
 #home {
-	background: url(../images/cover.jpg);
+	background: url(../images/portfolio_desktop.png);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -320,7 +323,6 @@ textarea.form-control {
 
 .home-overlay {
     background-color: rgba(44, 62, 80, 0.3);
-    background-image: url("../images/pattern.png");
     background-repeat: repeat;
     height: 100%;
     left: 0;
@@ -333,7 +335,7 @@ textarea.form-control {
 .intro {
 	position: absolute;
 	width: 100%;
-	top: 50%;
+	top: 75%;
 	left: 0;
 	text-align: center;
 	-webkit-transform: translate(0%, -50%);
@@ -345,11 +347,12 @@ textarea.form-control {
 }
 
 .intro h1{
-    font-weight: 800;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
 }
 
 .start {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-family: 'Lobster', cursive;
 	font-size: 16px;
 	font-style: normal;
 	text-transform: none;
@@ -374,6 +377,7 @@ textarea.form-control {
 .iconbox-title {
 	margin: 0 0 15px;
 	padding: 0;
+	font-weight: 800;
 }
 
 
@@ -389,6 +393,7 @@ textarea.form-control {
     left: 0;
     position: absolute;
     top: 0;
+
 }
 .percent {
     display: inline-block;
@@ -681,7 +686,7 @@ textarea.form-control {
 
 .grid figure figcaption {
 	padding: 2em;
-	color: #fff;
+	color: #1BB6E0;
 	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
@@ -731,7 +736,7 @@ textarea.form-control {
 
 
 figure.effect-bubba {
-	background: grey;
+	background: lightgrey;
 }
 
 figure.effect-bubba img {
@@ -777,7 +782,7 @@ figure.effect-bubba h2 {
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,-20px,0);
 	transform: translate3d(0,-20px,0);
-    color: #fff;
+    color: #1BB6E0;
 }
 
 figure.effect-bubba p {
@@ -795,7 +800,6 @@ figure.effect-bubba:hover figcaption::after {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-
 figure.effect-bubba:hover h2,
 figure.effect-bubba:hover p {
 	opacity: 1;
@@ -893,4 +897,16 @@ figure.effect-bubba:hover p {
 	}
 
 }
-
+.services_colmn-sm-3{
+	height: 25vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+}
+.default_color{
+	background: #1BB6E0;
+}
+.default_color_border{
+	border: 1px solid #1bb6e0;
+}

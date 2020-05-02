@@ -58,7 +58,7 @@
                     animate: 2000,
                     lineCap:'butt',
                     scaleColor: false,
-                    barColor: '#FF5252',
+                    barColor: '#1BB6E0',
                     trackColor: 'transparent',
                     lineWidth: 10
                 });
