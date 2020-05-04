@@ -910,3 +910,19 @@ figure.effect-bubba:hover p {
 .default_color_border{
 	border: 1px solid #1bb6e0;
 }
+@media  screen  and (min-width: 4200px) {
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	section{
+		width: 60%;
+		margin: 0  auto;
+	}
+	.intro{
+		font-size: 3em;
+	}
+	.start{
+		font-size: 3em;
+	}
+}
