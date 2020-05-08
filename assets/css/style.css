@@ -926,3 +926,18 @@ figure.effect-bubba:hover p {
 		font-size: 3em;
 	}
 }
+.imageinside{
+	margin: 0 auto;
+}
+.pos_center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:-webkit-fill-available;
+}
+
+@media (max-width: 767px){
+	.disappear_phone{
+		display: none;
+	}
+}
