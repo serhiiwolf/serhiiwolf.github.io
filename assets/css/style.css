@@ -14,7 +14,7 @@ img {
 }
 
 a {
-	color: #E7746F;
+	color: #1BB6E0;
 }
 
 a:hover {
@@ -553,7 +553,7 @@ textarea.form-control {
 .scroll-up a:hover,
 .scroll-up a:active {
 	background-color: rgba(235, 235, 235, .8);
-	color: #e7746f;
+	color: #1BB6E0;
 }
 
 
@@ -586,6 +586,15 @@ textarea.form-control {
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
 	animation-play-state: running;
+}
+.scroll-down span:hover,
+.scroll-down span:active{
+	color: #1BB6E0;
+}
+.scroll-down:hover,
+.scroll-down:active{
+	border-color: #1BB6E0;
+	color: #1BB6E0;
 }
 
 @-webkit-keyframes drop	{
