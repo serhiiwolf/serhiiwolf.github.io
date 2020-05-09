@@ -648,6 +648,9 @@ textarea.form-control {
 	.intro h1{
 		font-size: 0.5em;
 	}
+	.intro{
+		top: 60%;
+	}
 }
 
 
