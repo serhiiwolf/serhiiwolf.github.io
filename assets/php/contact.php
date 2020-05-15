@@ -2,9 +2,9 @@
 
 if(isset($_POST['message'])){
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$message = $_POST['message'];
+	$name = $_POST['c_name'];
+	$email = $_POST['c_email'];
+	$message = $_POST['c_message'];
     
 	
 	$to      = 'serhiird2@gmail.com';
