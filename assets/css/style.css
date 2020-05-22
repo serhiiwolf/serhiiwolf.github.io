@@ -947,7 +947,7 @@ figure.effect-bubba:hover p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height:-webkit-fill-available;
+	
 }
 
 @media (max-width: 767px){
