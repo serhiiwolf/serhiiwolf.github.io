@@ -18,3 +18,12 @@ document.getElementById('sth').innerHTML = h;
 document.getElementById('stm').innerHTML = m;
 
 /* school */
+
+if (wd != "Sunday" && wd != "Saturday" ) {
+     if (h >= 9 && h <= 16 ) {
+       document.getElementById('wt').innerHTML = "Study";
+     }
+    
+}else{
+    document.getElementById('wt').innerHTML = "Freetime";
+}
