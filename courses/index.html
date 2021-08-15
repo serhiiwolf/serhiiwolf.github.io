@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test task JavaScript advanced</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div class="app-container pt-40">
+
+    <div id="ModalBox" class="off">
+        <div class="modal-content">
+            <p>Замовити</p>
+            <input type="text" id="name" placeholder="Ім'я" >
+            <input type="email" id="mail" placeholder="пошта">
+            <input type="button" value="замовити" id="check" onclick="check()">
+        </div>
+    </div>
+
+
+    <div class="top-cart">
+        <div class="top-cart-info">
+            <div class="container top-cart-info-container">
+                <span class="top-cart-info__item">
+                     Товаров в корзине - <span class="red-info" id="count">XXX</span>,
+                      на сумму <span class="red-info" id="cost">XXX</span> грн</span>
+                <button class="btn-check" onclick="onmodal()">Оформить заказ</button>
+            </div>
+        </div><!-- /.top-cart-info -->
+
+    </div><!-- /.top-cart -->
+
+
+
+    <header class="top-header">
+        <div class="container">
+            <h1>Welcome to our site</h1>
+        </div>
+    </header>
+
+    <div class="wrap">
+        <section class="container">
+            <div class="filter-box">
+                <div class="select-box">
+                    <label class="filter-label">Категория</label>
+                    <select class="select-control" onchange="filter1(this)">
+                        <option value="0">Все</option>
+                        <option value="1">Завтраки</option>
+                        <option  value="2">Первые блюда</option>
+                        <option  value="3">Гарниры</option>
+                    </select>
+                </div><!-- /.select-box -->
+                <div class="price-select-box">
+                    <label class="filter-label">Цена</label>
+                    <select class="select-control" onchange="filter2(this)">
+                        <option value="0">Все</option>
+                        <option value="30">До 30 грн</option>
+                        <option value="50">До 50 грн</option>
+                        <option value="100">До 100 грн</option>
+                        <option value="150">До 150 грн</option>
+                    </select>
+                </div><!-- /.price-select-box -->
+            </div><!-- /filter-box-->
+
+
+
+            <div class="products-box grid-box">
+
+                <div class="product-box__item breakfast">
+                    <h3 class="product-box__title">Овсяная каша с фруктами</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im1.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>25 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_1"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(25,'n_1')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item breakfast">
+                    <h3 class="product-box__title">Яичница глазунья с овощами на сковородке</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im2.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>25 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_2"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(25,'n_2')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item breakfast">
+                    <h3 class="product-box__title">Сет азербайджанский завтрак</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im3.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>30 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_3"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(30,'n_3')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item garnish">
+                    <h3 class="product-box__title">Яичница с помидорами по-бакински</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im4.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>45 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_4"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(45,'n_4')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item breakfast">
+                    <h3 class="product-box__title">Сырники со сметаной</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im5.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>45 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_5"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(45,'n_5')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item soup">
+                    <h3 class="product-box__title">Шпинатный крем-суп</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im6.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>50 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_6"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(50,'n_6')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item soup">
+                    <h3 class="product-box__title">Суп Пити</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im7.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>85 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_7"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(85,'n_7')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item soup">
+                    <h3 class="product-box__title">Борщ украинский</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im8.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>95 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_8"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(95,'n_8')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item soup">
+                    <h3 class="product-box__title">Суп Кюфта Бозбаш</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im9.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>100 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_9"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(100,'n_9')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item garnish">
+                    <h3 class="product-box__title">Картофель фри</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im10.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>125 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_10"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(125,'n_10')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item garnish">
+                    <h3 class="product-box__title">Картофель по-домашнему</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im11.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>135 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_11"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(135,'n_11')">Добавить</button>
+
+                    </div>
+                </div>
+                <div class="product-box__item garnish">
+                    <h3 class="product-box__title">Рис с овощами</h3>
+                    <div class="product-box__img">
+                        <img class="img-fluid" src="i/im12.jpg">
+                    </div>
+                    <div class="product-box__meta">
+                        <p>150 грн.</p>
+                        <div class="qty">
+                            <input class="qty__item" type="number" id="n_12"> Кол
+                        </div>
+                        <button class="product-box__btn" onclick="buy(150,'n_12')">Добавить</button>
+
+                    </div>
+                </div>
+
+
+            </div><!-- /product-box-->
+
+        </section>
+    </div>
+
+    <footer class="bottom-footer bg-beetroot py-1">
+        <div class="container">
+            <div class="footer-row">
+                <div class="col-md-3">Beetroot &copy;2018</div>
+                <div class="col-md-9 text-center">
+                    <a target="_blank" href="https://academy.beetroot.se/?">Bettroot academy  2018</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div><!-- /.app-container -->
+
+
+
+
+</body>
+</html>
