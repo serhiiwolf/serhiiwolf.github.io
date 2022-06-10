@@ -24,6 +24,9 @@ if (wd != "Sunday" && wd != "Saturday" ) {
        document.getElementById('wt').innerHTML = "Study";
      }
     
-}else{
+}
+if (wd == "Sunday" || wd == "Saturday" ){
+    if (h <= 9 && h >= 16 ) {
     document.getElementById('wt').innerHTML = "Freetime";
+    }
 }
