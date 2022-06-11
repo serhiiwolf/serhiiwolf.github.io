@@ -50,6 +50,20 @@
 		 * Skills
         /* ---------------------------------------------- */    
         //var color = $('#home').css('backgroundColor');
+var skills_color;
+		if(color_theme == 1){
+			skills_color = '#1BB6E0'
+		}
+		if(color_theme == 2){
+			skills_color = '#A81BE0'
+		}
+		if(color_theme == 3){
+			skills_color = '#E0451B'
+		}
+		if(color_theme == 4){
+			skills_color = '#53E01B'
+		}
+
 
         $('.skills').waypoint(function(){
             $('.chart').each(function(){
@@ -58,9 +72,9 @@
                     animate: 2000,
                     lineCap:'butt',
                     scaleColor: false,
-                    barColor: '#1BB6E0',
+                    barColor: skills_color,
                     trackColor: 'transparent',
-                    lineWidth: 10
+                    lineWidth: 10,
                 });
             });
         },{offset:'80%'});

@@ -955,3 +955,12 @@ figure.effect-bubba:hover p {
 		display: none;
 	}
 }
+.theme_purple{
+	color: #A81BE0;
+}
+.theme_red{
+	color: #E0451B;
+}
+.theme_green{
+	color: #53E01B;
+}
