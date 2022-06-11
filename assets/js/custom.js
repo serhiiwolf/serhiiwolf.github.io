@@ -50,20 +50,69 @@
 		 * Skills
         /* ---------------------------------------------- */    
         //var color = $('#home').css('backgroundColor');
-var skills_color;
+		document.getElementById("clBlue").addEventListener("click", function(){colortheme(1);maintextchange(1);});
+		document.getElementById("clPurple").addEventListener("click", function(){ colortheme(2);maintextchange(2);});
+		
+		
+		function maintextchange(c){
+			if(c == 1){
+				let element = document.getElementById("pfblock-title");
+				element.classList.add("theme_blue");
+				element.classList.remove("theme_purple");
+				element.classList.remove("theme_red");
+				element.classList.remove("theme_green");
+			}
+			if(c == 2){
+				let element = document.getElementById("pfblock-title");
+				element.classList.remove("theme_blue");
+				element.classList.add("theme_purple");
+				element.classList.remove("theme_red");
+				element.classList.remove("theme_green");
+				
+			}
+			if(c == 3){
+				let element = document.getElementById("pfblock-title");
+				element.classList.remove("theme_blue");
+				element.classList.remove("theme_purple");
+				element.classList.add("theme_red");
+				element.classList.remove("theme_green");
+			}
+			if(c == 4){
+				let element = document.getElementById("pfblock-title");
+				element.classList.remove("theme_blue");
+				element.classList.remove("theme_purple");
+				element.classList.remove("theme_red");
+				element.classList.add("theme_green");
+			}
+			console.log("fff")
+
+		}
+		var color_theme = 1;
+		function colortheme(n){
+			color_theme = n;
+			maintextchange(n);
+			
+		}
+		
+		colortheme(1);
+		var skills_color;
 		if(color_theme == 1){
-			skills_color = '#1BB6E0'
+			skills_color = '#1BB6E0';
+			
 		}
 		if(color_theme == 2){
-			skills_color = '#A81BE0'
+			skills_color = '#A81BE0';
+			
 		}
 		if(color_theme == 3){
-			skills_color = '#E0451B'
+			skills_color = '#E0451B';
+			
 		}
 		if(color_theme == 4){
-			skills_color = '#53E01B'
+			skills_color = '#53E01B';
+			
 		}
-
+		
 
         $('.skills').waypoint(function(){
             $('.chart').each(function(){
@@ -79,7 +128,7 @@ var skills_color;
             });
         },{offset:'80%'});
         
-        
+       
         /* ---------------------------------------------- /*
 		 * Quote Rotator
 		/* ---------------------------------------------- */

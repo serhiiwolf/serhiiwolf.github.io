@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
-	color: #222;
+
 }
 
 h2 {
@@ -240,7 +240,6 @@ textarea.form-control {
 .pfblock-title{
     font-weight: 800;
     font-family: Roboto;
-    color: #1BB6E0;
 }
 
 .pfblock-subtitle {
@@ -955,6 +954,9 @@ figure.effect-bubba:hover p {
 		display: none;
 	}
 }
+.theme_blue{
+	color: #1BB6E0;
+}
 .theme_purple{
 	color: #A81BE0;
 }
@@ -963,4 +965,16 @@ figure.effect-bubba:hover p {
 }
 .theme_green{
 	color: #53E01B;
+}
+.theme__blue{
+	background-color: #1BB6E0;
+}
+.theme__purple{
+	background-color: #A81BE0;
+}
+.theme__red{
+	background-color: #E0451B;
+}
+.theme__green{
+	background-color: #53E01B;
 }
