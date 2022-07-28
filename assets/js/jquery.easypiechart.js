@@ -355,6 +355,14 @@ $.fn.easyPieChart = function(options) {
 		}
 	});
 };
+$('.updatePieCharts').on('click', function(e) {
+    e.preventDefault();
+    $('.chart').data('easyPieChart').update(0);
+    $('.chart').data('easyPieChart').update(currentValue);
+    $('span', $('.chart')).text(currentValue);
 
-
+})
 }));
+
+
+

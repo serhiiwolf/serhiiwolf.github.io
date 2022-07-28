@@ -91,27 +91,27 @@
 		function colortheme(n){
 			color_theme = n;
 			maintextchange(n);
-			
+			if(color_theme == 1){
+				skills_color = '#1BB6E0';
+				
+			}
+			if(color_theme == 2){
+				skills_color = '#A81BE0';
+				
+			}
+			if(color_theme == 3){
+				skills_color = '#E0451B';
+				
+			}
+			if(color_theme == 4){
+				skills_color = '#53E01B';
+				
+			}
 		}
 		
-		colortheme(1);
+		colortheme(3);
 		var skills_color;
-		if(color_theme == 1){
-			skills_color = '#1BB6E0';
-			
-		}
-		if(color_theme == 2){
-			skills_color = '#A81BE0';
-			
-		}
-		if(color_theme == 3){
-			skills_color = '#E0451B';
-			
-		}
-		if(color_theme == 4){
-			skills_color = '#53E01B';
-			
-		}
+		
 		
 
         $('.skills').waypoint(function(){
