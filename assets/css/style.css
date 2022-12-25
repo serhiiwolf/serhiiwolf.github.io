@@ -955,3 +955,6 @@ figure.effect-bubba:hover p {
 		display: none;
 	}
 }
+.fit-cover{
+	object-fit: cover;
+}
