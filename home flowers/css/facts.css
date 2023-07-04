@@ -1,0 +1,35 @@
+.info{
+    width: 80%;
+    margin: 0 auto;
+
+}
+.info img{
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.infoblock{
+    width: 70%;
+    display: flex;
+    margin:  0 auto;
+    justify-content: space-around;
+    padding: 100px;
+}
+.typea{
+    flex-direction: row ;
+}
+.typeb{
+    flex-direction: row-reverse;
+}
+.info_text{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+}
+center h1{
+    padding: 100px 0 10px;
+}

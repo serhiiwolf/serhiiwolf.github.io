@@ -1,0 +1,47 @@
+HTML, BODY {
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  }
+  content{
+    overflow: hidden;
+    background-color: #ffffff;
+    background-size: 0.75em 100%, 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 200px;
+  }
+  .wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin: auto;
+    max-width: 1200px;
+    max-height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 2vmin;
+    justify-items: center;
+    align-items: center;
+  }
+  content IMG {
+    z-index: 1;
+    grid-column: span 2;
+    max-width: 100%;
+    margin-bottom: -52%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: scale(1);
+    transition: all 0.25s;
+  }
+  content IMG:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+  }
+  content IMG:hover {
+    z-index: 2;
+    transform: scale(2);
+  }
+header{
+    border-bottom: 2px solid black;
+}  

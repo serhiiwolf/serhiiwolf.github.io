@@ -1,0 +1,61 @@
+*{
+    font-weight: normal ;
+}
+b{
+    font-weight: 900;
+}
+.content{
+    width: calc(100%-200px);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.green_trend, .choose, .advice, .bedroom, .bath{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.green_trend img{
+    max-height: 70vh;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.tcon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+.choose, .bedroom, .bath{
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+.choose img{
+    max-width: 500px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.advice img, .bedroom img, .bath img{
+    aspect-ratio: 2/1;
+}
+.bedroom img{
+    max-height: 300px;
+    object-fit: cover;
+}
+.bath{
+    flex-direction: row;
+}
+.bath img{
+    max-width: 25vw;
+}
+.kitchen img{
+    max-height: fit-content;
+    max-width: 300px;
+}

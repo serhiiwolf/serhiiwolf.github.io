@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/animation.js"></script>
+    <title>Plants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <header>
+                <div class="logo">
+                    <img src="./img/sakura (1).png" alt="" width="25%">
+                    <h1> <a href="index.html">FlowFlower</a></h1>
+                </div>
+                <div class="header_nav">
+                    <a href="galery.html"><p>Галерея</p></a>
+                    <a href="facts.html"><p>Цікаві факти</p></a>
+                    <a href="decor.html"><p>Декоративні елементи</p></a>
+                </div>
+            </header>
+            <div class="header_content">
+                <div class="header_content_info">
+                    <h1>Домашні<br> Рослини</h1>
+                    <p>В цьому сайті ви трохи дізнаєтесь про домашні рослини, а саме: подивитесь на красиві рослинки, дізнаєтесь цікаві факти і трохи про використання їх в інтер'єрі</p>
+                    <button>    <a href="galery.html"> До галереї?</a></button>
+                </div>
+                <div class="header_content_slider" id="fone">
+                    <img src="./img/next.png" alt="" onclick="changePhoto(2,0)">
+                </div>
+            </div>
+            <div class="header_external_links">
+                <a href="galery.html"><img src="./img/gallery.png" alt=""></a>
+                <a href="facts.html"><img src="./img/take-care.png" alt=""></a>
+                <a href="decor.html"><img src="./img/plan.png" alt=""></a>
+            </div>
+            <div class="header_quick_photos">
+                <hr>
+                <p>Рослини</p>
+                <p>це</p>
+                <p>красиво</p>
+            </div>
+            <div class="header_slider_element">
+                <div class="show" id="slide">
+                    <a  class="checked" onclick="changePhoto(5, 0)"></a>
+                    <a  onclick="changePhoto(5, 1)"></a>
+                    <a  onclick="changePhoto(5, 2)"></a>
+                    <a  onclick="changePhoto(5, 3)"></a>
+                </div>
+                <p id="photoNumber">1 - 4</p>
+            </div>
+        </div>
+        <div class="report">
+            <div class="report_back"></div>
+            <div class="report_info">
+                <h1>Цікавий  Факт</h1>
+                <h3>Ечеверія - Рослина зростатиме виключно в поживній суглинній землі з домішками піску. Без надмірного надходження вологи не виживе, але, водночас, застій води призведе до загибелі квітки.
+
+                    Цікаво, що опушені види ехеверії треба поливати обережно, не так часто, як голі, і намагаючись не потрапляти краплями на тіло рослини.</h3>
+                <a href="facts.html">Читати більше</a>
+            </div>
+            <div class="report_navigation">
+                <a href="facts.html"><img src="./img/next.png" alt=""></a>
+            </div>
+        </div>
+        <footer>
+            <h6>кінець сторінки</h6>
+        </footer>
+    </div>
+</body>
+</html>
