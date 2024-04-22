@@ -24,7 +24,7 @@ h1{
 }
 .container{
     z-index: 1;
-    width: 100%;
+    width: 100vw;
     background: rgb(248, 247, 247);
 
 }
