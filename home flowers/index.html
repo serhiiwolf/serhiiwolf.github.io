@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js"></script>
-    <script src="./js/animation.js"></script>
     <title>Plants</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,27 +13,30 @@
 <body>
     <div class="container">
         <div class="header">
-            <header>
+            <header class="topnav">
                 <div class="logo">
                     <img src="./img/sakura (1).png" alt="" width="25%">
-                    <h1> <a href="index.html">FlowFlower</a></h1>
+                    <h1> <a href="index.html"> FlowFlower</a></h1>
                 </div>
-                <div class="header_nav">
-                    <a href="galery.html"><p>Галерея</p></a>
-                    <a href="facts.html"><p>Цікаві факти</p></a>
-                    <a href="decor.html"><p>Декоративні елементи</p></a>
+                <div class="header_nav" id="myLinks">
+                    <a href="galery.html"><p>Gallery</p></a>
+                    <a href="facts.html"><p>Interesting Facts</p></a>
+                    <a href="decor.html"><p>Decorative elements</p></a>
                 </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </header>
-            <div class="header_content">
+            
                 <div class="header_content_info">
-                    <h1>Домашні<br> Рослини</h1>
-                    <p>В цьому сайті ви трохи дізнаєтесь про домашні рослини, а саме: подивитесь на красиві рослинки, дізнаєтесь цікаві факти і трохи про використання їх в інтер'єрі</p>
-                    <button>    <a href="galery.html"> До галереї?</a></button>
+                    <h1>Home<br> Plants</h1>
+                    <p>On this site you will learn a little about house plants, namely: look at beautiful plants, learn interesting facts and a little about their use in the interior</p>
+                    <button>    <a href="galery.html"> To gallery?</a></button>
                 </div>
                 <div class="header_content_slider" id="fone">
                     <img src="./img/next.png" alt="" onclick="changePhoto(2,0)">
                 </div>
-            </div>
+            
             <div class="header_external_links">
                 <a href="galery.html"><img src="./img/gallery.png" alt=""></a>
                 <a href="facts.html"><img src="./img/take-care.png" alt=""></a>
@@ -43,9 +44,9 @@
             </div>
             <div class="header_quick_photos">
                 <hr>
-                <p>Рослини</p>
-                <p>це</p>
-                <p>красиво</p>
+                <p>PLANTS</p>
+                <p>ARE</p>
+                <p>BEAUTIFUL</p>
             </div>
             <div class="header_slider_element">
                 <div class="show" id="slide">
@@ -60,19 +61,48 @@
         <div class="report">
             <div class="report_back"></div>
             <div class="report_info">
-                <h1>Цікавий  Факт</h1>
-                <h3>Ечеверія - Рослина зростатиме виключно в поживній суглинній землі з домішками піску. Без надмірного надходження вологи не виживе, але, водночас, застій води призведе до загибелі квітки.
+                <h1>Interesting Fact</h1>
+                <h3>Echeveria - The plant will grow exclusively in nutritious loamy soil with sand admixtures. Without an excessive supply of moisture, it will not survive, but at the same time, stagnation of water will lead to the death of the flower.
 
-                    Цікаво, що опушені види ехеверії треба поливати обережно, не так часто, як голі, і намагаючись не потрапляти краплями на тіло рослини.</h3>
-                <a href="facts.html">Читати більше</a>
+                    It is interesting that hairy species of echeveria should be watered carefully, not as often as naked ones, and trying not to get drops on the body of the plant.</h3>
+                <a href="facts.html">Read more</a>
             </div>
             <div class="report_navigation">
                 <a href="facts.html"><img src="./img/next.png" alt=""></a>
             </div>
         </div>
+        <div class="feedback">
+            <form action="feedback()" id="cont">
+                <center>Contact me</center>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="pl">Poland</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="ua">Ukraine</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="reset" value="Submit" style="height:50px" onclick="feedback()">
+            
+              </form>
+        </div>
         <footer>
-            <h6>кінець сторінки</h6>
+            <h6>45308</h6>
         </footer>
     </div>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/animation.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

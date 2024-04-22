@@ -1,7 +1,7 @@
-*{
-    font-weight: normal ;
+header{
+    border-bottom: 1px solid black;
 }
-b{
+b, header p{
     font-weight: 900;
 }
 .content{
@@ -9,53 +9,112 @@ b{
     padding: 100px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    
+    align-items: center;
+    justify-content: center;
+}
+.content_block{
+    width: 70%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.green_trend, .choose, .advice, .bedroom, .bath{
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.content_block:nth-child(even){
+    flex-direction: row-reverse;
 }
-.green_trend img{
-    max-height: 70vh;
+.content_block img{
+    max-width: 60%;
     aspect-ratio: 1/1;
-    object-fit: cover;
+    object-fit:scale-down ;
 }
+p{
+    font-weight: normal ;
+}
+
 .tcon{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 10px;
+    padding: 10px;
 }
-.choose, .bedroom, .bath{
-    width: 60%;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 20px;
+.tcon span{
+    color: #04AA6D;
 }
-.choose img{
-    max-width: 500px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+
+@media (1024px < width <= 1440px){
+    .content_block img{
+        object-fit: contain;
+    }
+    .content{
+        width: 100%;
+        padding: 50px;
+    }
+    .content_block{
+        width: 90%;
+    }
 }
-.advice img, .bedroom img, .bath img{
-    aspect-ratio: 2/1;
+@media (width <= 1024px){
+    .content{
+        width: 100%;
+        padding: 10px;
+    }
+    .content_block, .content_block:nth-child(even){
+        flex-direction: column; 
+        width: 100%
+    }
+    .content_block img{
+        max-width: 80%;
+        object-fit: 1/1;
+    }
 }
-.bedroom img{
-    max-height: 300px;
-    object-fit: cover;
-}
-.bath{
-    flex-direction: row;
-}
-.bath img{
-    max-width: 25vw;
-}
-.kitchen img{
-    max-height: fit-content;
-    max-width: 300px;
-}
+
+
+
+
+.topnav a.icon{
+    display: none;
+  }
+  @media (width <= 768px){
+  
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  
+  .topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  }

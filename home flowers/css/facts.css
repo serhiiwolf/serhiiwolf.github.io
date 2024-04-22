@@ -13,7 +13,12 @@
     display: flex;
     margin:  0 auto;
     justify-content: space-around;
+   
     padding: 100px;
+}
+.infoblock p{
+    font-weight: normal;
+    max-width: 500px;
 }
 .typea{
     flex-direction: row ;
@@ -33,3 +38,99 @@
 center h1{
     padding: 100px 0 10px;
 }
+header{
+    border-bottom: 1px solid black;
+}
+@media (1024px < width <= 1440px){
+    .info{
+        width: 100%;
+    }
+    .infoblock{
+        width: 80%;
+    }
+    .infoblock p{
+        max-width: auto;
+    }
+    .info img{
+        max-width:30%;
+    }
+    .info_text{
+        padding: 0;
+    }
+}
+@media (width <= 1024px){
+    .info{
+        width: 100%;
+        display: flex;
+        gap: 100px;
+        flex-direction: column;
+        padding:  50px 0 0 0;
+    }
+    .infoblock{
+        width: 100%;
+        padding: 0;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .infoblock p{
+        max-width: auto;
+    }
+    .info img{
+        max-width:70%;
+        aspect-ratio: 2/1;
+    }
+    .info_text{
+        padding: 0;
+        font-size: small;
+        gap: 0;
+        height: auto;
+    }
+}
+
+
+.topnav a.icon{
+    display: none;
+  }
+  @media (width <= 768px){
+  
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  
+  .topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  }

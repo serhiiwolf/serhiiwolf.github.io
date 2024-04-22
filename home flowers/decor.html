@@ -4,95 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Decor</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/decor.css">
 </head>
 <body>
-    <header>
+    <header class="topnav">
         <div class="logo">
             <img src="./img/sakura (1).png" alt="" width="25%">
             <h1> <a href="index.html"> FlowFlower</a></h1>
         </div>
-        <div class="header_nav">
-            <a href="galery.html"><p>Галерея</p></a>
-            <a href="facts.html"><p>Цікаві факти</p></a>
-            <a href="decor.html"><p>Декоративні елементи</p></a>
+        <div class="header_nav" id="myLinks">
+            <a href="galery.html"><p>Gallery</p></a>
+            <a href="facts.html"><p>Interesting Facts</p></a>
+            <a href="decor.html"><p>Decorative elements</p></a>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
     <div class="content">
-        <div class="green_trend">
+        <div class=" content_block">
             <img src="./img/trend.jpg" alt="">
             <div class="tcon">
-                <h1>Квіти в кімнаті: «зелені» тренди</h1>
-                <p>Про еко-тренди сказано багато. Вони стали лейтмотивом у оформленні будь-яких кімнат. Рослинний декор використовується навіть у ванних. Чим обумовлений такий поворот до природи? Насамперед тим, що ми живемо в урбанізованому середовищі. Квіти в сучасному інтер'єрі – це повернення до витоків, турбота про своє здоров'я та емоційний баланс.</p>
-                <p>Озеленення – відмінний вихід для тих, хто поки не готовий завести домашнього улюбленця. Домашні джунглі потребують «підкріплення»: натуральних кольорів і матеріалів, аксесуарів і візерунків, навіяних флорою та фауною.</p>
-                <p>Роль кімнатних рослин в інтер'єрі:</p>
-                <li>«Оживляють» обстановку;</li>
-                <li>Видаляють із повітря токсини;</li>
-                <li>Зволожують повітря і насичують його киснем;</li>
-                <li>Мають ароматерапевтичний ефект (деякі види);</li>
-                <li>Знижують стрес і втому;</li>
-                <li>Сприяють спокійному сну;</li>
-                <li>Підвищують продуктивність і концентрацію.</li>
+                <h1>Flowers in the room: <span>"green"</span> trends</h1>
+                 <p>A lot has been said about eco-trends. They have become a leitmotif in the design of any room. Plant decor is used even in bathrooms. What causes such a turn to nature? First of all, the fact that we live in an urbanized environment. Flowers in a modern interior are a return to the roots, taking care of one's health and emotional balance.</p>
+                 <p>Landscaping is a great solution for those who are not yet ready to get a pet. The home jungle needs "reinforcement": natural colors and materials, accessories and patterns inspired by flora and fauna.</p>
+                 <p>The role of indoor plants in the interior:</p>
+                 <li>"Enliven" the environment;</li>
+                 <li>Toxins are removed from the air;</li>
+                 <li>Moisturize the air and saturate it with oxygen;</li>
+                 <li>Have an aromatherapeutic effect (some types);</li>
+                 <li>Reduce stress and fatigue;</li>
+                 <li>Contribute to restful sleep;</li>
+                 <li>Increase productivity and concentration.</li>
             
             </div>
         </div>
-        <div class="choose">
+        <div class=" content_block">
             <img src="./img/choose.jpeg" alt="">
             <div class="tcon">
-                <h1>Як вибрати і красиво розставити кімнатні рослини</h1>
-                <p>У квітів і людей багато спільного: у всіх свій характер і вподобання. Хтось невибагливий, а хтось примхливий. Одні потребують постійної уваги та турботи, а інші цінують спокій і усамітнення. Що потрібно знати тим, хто вирішив озеленити будинок або квартиру?</p>
-                <p>Кімнатні рослини в інтер'єрі житлового будинку мають почуватися комфортно. Враховуйте сторону, куди виходять вікна, і кількість вільного простору. Наприклад, пальми й інші високі представники флори підійдуть для приміщень із високими стелями. Але якщо ви хочете досягти гротескного ефекту, великі напольні квіти та рослини в інтер'єрі малогабаритних квартир теж виглядають цікаво. Поцікавтеся, звідки ваша рослина. Тим, хто звик до тепла та сонця, протипоказані вікна на північ. Вазони, які бояться прямих сонячних променів, краще заховати у глибині кімнати. Це – запорука здоров'я і нормального росту. Підсумуємо фактори, які впливають на вибір і розміщення квітів:</p>
-                <li>Освітлення, температура і вологість;</li>
-                <li>Стильове та колірне оформлення інтер'єру;</li>
-                <li>Наявність маленьких дітей і домашніх тварин;</li>
-                <li>Особливості та складнощі догляду.</li>
+                <h1>How to <span>choose</span> and beautifully arrange indoor plants</h1>
+                 <p>Flowers and people have a lot in common: everyone has their own character and preferences. Someone is unpretentious, and someone is capricious. Some need constant attention and care, while others value peace and solitude. What should be known to those who decide to landscape a house or apartment?</p>
+                 <p>House plants in the interior of a residential building should feel comfortable. Take into account the side where the windows face and the amount of free space. For example, palm trees and other tall representatives of the flora are suitable for rooms with high ceilings. But if you want to achieve a grotesque effect, large outdoor flowers and plants in the interior of small apartments also look interesting. Ask where your plant is from. North facing windows are contraindicated for those who are used to heat and sun. Flower pots that are afraid of direct sunlight are better hidden in the depths of the room. This is a guarantee of health and normal growth. Let's summarize the factors that influence the choice and placement of flowers:</p>
+                 <li>Lighting, temperature and humidity;</li>
+                 <li>Stylish and color decoration of the interior;</li>
+                 <li>Presence of small children and pets;</li>
+                 <li>Features and complications of care.</li>
             
             </div>   
         </div>
-        <div class="advice">
+        <div class=" content_block">
             <img src="./img/advice.jpg" alt="">
             <div class="tcon">
-                <h1>Поради щодо догляду за рослинами в інтер'єрі квартири</h1>
-                <p>Є і суто практичні моменти, які потрібно врахувати. Скажіть собі чесно, скільки часу ви готові приділяти догляду: поливу, пересаджуванню, підживленню та іншим процедурам. Важливий аспект – стабільний температурний режим. Деякі види пристосовані до прохолоди, деякі люблять тепло. Але різкі скачки температури, протяги та сусідство з радіаторами шкодять усім. Живі квіти в інтер'єрі потрібно удобрювати (в період активного росту) і регулярно оглядати, щоб вчасно виявити захворювання та шкідників.</p>
-                <b><p>Рекомендація: Організувати догляд допоможуть спеціальні мобільні додатки. Там є каталог рослин з інформацією та порадами, а також нагадування про необхідність поливу та підживлення.</p></b>
-                <p>Своєчасний полив – не єдиний прояв турботи. Повітря у приміщеннях часто сухе, особливо влітку та при ввімкненні опалення взимку. Від цього страждають вологолюбні види. Рекомендуємо придбати зволожувач або поставити поруч із батареєю посудину з водою.   </p>
-
+                <h1>Tips on caring for plants in the interior of the <span> apartment</span></h1>
+                 <p>There are also purely practical points that need to be taken into account. Tell yourself honestly how much time you are willing to devote to care: watering, transplanting, feeding and other procedures. An important aspect is a stable temperature regime. Some species are adapted to coolness, some like heat. But sharp jumps in temperature, drafts and proximity to radiators harm everyone. Fresh flowers in the interior should be fertilized (during the period of active growth) and regularly inspected in order to detect diseases and pests in time.</p>
+                 <b><p>Recommendation: Special mobile applications will help organize care. There is a plant catalog with information and advice, as well as reminders about the need for watering and feeding.</p></b>
+                 <p>Timely watering is not the only manifestation of care. Indoor air is often dry, especially in summer and when the heating is turned on in winter. Moisture-loving species suffer from this. We recommend purchasing a humidifier or placing a container of water next to the battery. </p>
             </div>
         </div>
-        <div class="bedroom">
+        <div class=" content_block">
             <img src="./img/bedroom.jpg" alt="">
             <div class="tcon">
-                <h1>Квіти в інтер'єрі спальні</h1>
-                <p>
-                Кімната з рослинами має сприяти відпочинку та розслабленню. Ідеальний варіант – сансевієрія, яка виробляє кисень не тільки вдень, але і вночі. Для максимальної користі поставте вазон у радіусі 2 м від спального місця. Також для приміщення підходять бегонія, пеларгонія (герань), спатіфіллум (жіноче щастя), мирт.
-                </p>
-                <p>Не варто недооцінювати запахи: квіти у горщиках в інтер'єрі створюють настрій, допомагають при безсонні, знімають напругу. Це відмінна альтернатива аромадифузорам та освіжувачам. Наприклад, спокійному сну сприятимуть аромати кімнатного жасмину і лаванди.</p>
-
+                <h1>Flowers in the<span> bedroom</span> interior</h1>
+                 <p>
+                 A room with plants should promote rest and relaxation. An ideal option is sansevieria, which produces oxygen not only during the day, but also at night. For maximum benefit, place the flowerpot within a radius of 2 m from the sleeping place. Begonia, pelargonium (geranium), spathiphyllum (female happiness), myrtle are also suitable for the room.
+                 </p>
+                 <p>Do not underestimate smells: flowers in pots in the interior create a mood, help with insomnia, relieve tension. It is an excellent alternative to aroma diffusers and air fresheners. For example, the aromas of room jasmine and lavender will promote a restful sleep.</p>
 
             </div>
         </div>
-        <div class="bath">
+        <div class=" content_block">
             <img src="./img/bath.jpg" alt="">
             <div class="tcon">
-                <h1>Рослини для інтер'єру ванної</h1>
-                <p>Мікроклімат ванної нагадує тропічний ліс. Тут волого, душно та мало світла. Вибирайте види, які люблять тінь, а також стійкі до підвищеної вологості і температури. Але навіть тіньолюбні і тіньовитривалі представники флори потребують світла. Встановіть невеликі світильники або час від часу виставляйте вазони на добре освітлене підвіконня.</p>
-                <p>Рослини, що підходять, – кімнатний бамбук, хлорофітум, сансевієрія, монстера. Крім того, у ванних нерідко можна побачити орхідеї. Незважаючи на те, що квіти асоціюються з примхливістю та тендітністю, є 2 види, здатні тут прижитися. Це «метелик» і «зозулині черевички». Вони гармонійно виглядатимуть у зоні умивальника біля дзеркала.</p>
-            </div>
+                <h1>Plants for the interior of the<span> bathroom</span></h1>
+                 <p>The microclimate of the bathroom resembles a tropical forest. It is humid, stuffy and there is little light. Choose species that love the shade, as well as resistant to high humidity and temperature. But even shade-loving and shade-tolerant flora need light. Install small lamps or occasionally display flower pots on a well-lit windowsill.</p>
+                 <p>Suitable plants are indoor bamboo, chlorophytum, sansevieria, monstera. In addition, you can often see orchids in bathrooms. Despite the fact that flowers are associated with capriciousness and fragility, there are 2 species that are able to take root here. These are "butterfly" and "cuckoo shoes". They will look harmonious in the area of the sink near the mirror.</p>
+                </div>
         </div>
-        <div class="bedroom kitchen">
+        <div class="  content_block">
             <img src="./img/kitchen.jpg" alt="">
             <div class="tcon">
-                <h1>Кімнатні рослини в інтер'єрі кухні</h1>
-                <p>Свіжа зелень із грядки, яка завжди під рукою, – мрія (звичайно, якщо ви не живете на дачі). Поєднайте естетику та практичність, створіть на кухні міні-город. Вирощуйте трави й овочі, щоб одразу додавати їх до страв. Це можуть бути звичайні горщики на полицях і етажерках або міні-теплиці.</p>
-                <p>Для міні-городу підходять петрушка, кінза, базилік, цибуля, розмарин. Помідори, огірки та перець – уже на рівень складніше, але ви впораєтеся. При виборі ґрунту найпростішим рішенням буде універсальна суміш. Не забудьте підписати горщики зі сходами, поливайте їх і проріджуйте. Відчуваєте, що садівництво – це ваше? Спробуйте виростити лимон, кафрський лайм або авокадо з кісточки. Якщо ж ви збираєтеся просто озеленити кухню, вибирайте невибагливі фіалки, плющ, аспарагус.</p>
-                <p>Незвично виглядатиме грядка на декоративній драбині. Hand-made теж у тренді, зробіть горщик власноруч. Для цього підійде старий посуд: чашка, чайник, залізний контейнер.</p>
+                <h1>House plants in the interior of the<span> kitchen</span></h1>
+                 <p>Fresh greens from the garden, which is always at hand, is a dream (of course, if you do not live in the country). Combine aesthetics and practicality, create a mini-garden in the kitchen. Grow herbs and vegetables to immediately add to dishes. These can be ordinary pots on shelves and shelves or a mini-greenhouse.</p>
+                 <p>Parsley, cilantro, basil, onions, rosemary are suitable for a mini-garden. Tomatoes, cucumbers and peppers are already a level more difficult, but you will manage. When choosing soil, the simplest solution will be a universal mixture. Do not forget to sign the pots with stairs, water them and thin them. Feel like gardening is your thing? Try growing a lemon, kaffir lime, or avocado from the pit. If you are just going to green the kitchen, choose unpretentious violets, ivy, asparagus.</p>
+                 <p>A bed on a decorative ladder will look unusual. Hand-made is also in trend, make a pot yourself. Old dishes are suitable for this: a cup, a teapot, an iron container.</p>      
             </div>
         </div>
     </div>
     <footer>
-        <h6>кінець сторінки</h6>
+        <h6>45308</h6>
     </footer>
+
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </body>
 </html>
