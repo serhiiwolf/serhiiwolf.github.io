@@ -10,7 +10,7 @@ li{
     font-weight: normal;
 }
 body{
-    max-width: 100vw;
+    max-width: 100%;
     overflow-x: hidden;
 }
 a{
@@ -25,6 +25,7 @@ h1{
 .container{
     z-index: 1;
     width: 100vw;
+    max-width: 100%;
     background: rgb(248, 247, 247);
 
 }
@@ -415,9 +416,7 @@ footer{
   .topnav a.icon {
     background: white;
     display: block;
-    position: absolute;
-    right: 0;
-    top: 50;
+    
   }
   
   
