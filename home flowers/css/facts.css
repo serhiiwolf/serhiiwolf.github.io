@@ -41,6 +41,12 @@ center h1{
 header{
     border-bottom: 1px solid black;
 }
+
+.header_nav a:nth-child(2)::before{
+    bottom: 0;
+      height: 100%;
+  }
+
 @media (1024px < width <= 1440px){
     .info{
         width: 100%;

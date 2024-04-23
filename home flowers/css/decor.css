@@ -44,6 +44,11 @@ p{
     color: #04AA6D;
 }
 
+.header_nav a:nth-child(3)::before{
+    bottom: 0;
+      height: 100%;
+  }
+
 @media (1024px < width <= 1440px){
     .content_block img{
         object-fit: contain;
