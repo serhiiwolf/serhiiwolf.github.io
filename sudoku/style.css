@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+}
+.box{
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+    height: 50vh;
+    position:fixed;
+    top: calc((100vh - 50vh)/2);
+    left: calc((100% - 50vh)/2);
+    
+}
+.buttons{
+    position: absolute;
+    right: 0;
+    top: calc((100vh - 50vh)/2);
+    width: 100px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+[class*="mat-box"],.box{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 1px solid black;
+}
+select{
+    appearance: none;
+}
+option {
+    text-align: center;
+}
